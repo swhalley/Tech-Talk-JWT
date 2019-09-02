@@ -1,0 +1,15 @@
+{
+  "name": "tech-talk-jwt",
+  "version": "1.0.0",
+  "description": "* JWT stands for JSON Web Token. * JWT is a Claim. Meaning you \"claim\" to be someone * Recently put together a course for work, Realized I knew less about authentication/authorization than I thought I did.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
