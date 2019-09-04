@@ -5,8 +5,10 @@ const jsonwebtoken = require('jsonwebtoken');
 const app = express();
 
 const jwtMiddleware = (req, res, next) => {
+    //Format of the header is 
+    //Authorization: Bearer <token>
     const rawToken = req.headers['authorization'] || '';
-    const bearerToken = rawToken.slice(7);
+    const bearerToken = rawToken.slice(7); 
 
     try {
         jwtService.checkToken( bearerToken );
